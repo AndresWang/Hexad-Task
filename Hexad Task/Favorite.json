@@ -1,0 +1,64 @@
+{
+    "favorites": [
+        {
+            "title": "Alien",
+            "rating": 5
+        },
+        {
+            "title": "Back to the Future",
+            "rating": 2
+        },
+        {
+            "title": "Avatar",
+            "rating": 2
+        },
+        {
+            "title": "Brokeback Mountain",
+            "rating": 1
+        },
+        {
+            "title": "The Fifth Element",
+            "rating": 3
+        },
+        {
+            "title": "Finding Nemo",
+            "rating": 5
+        },
+        {
+            "title": "The Legend of 1900",
+            "rating": 2
+        },
+        {
+            "title": "Monsters, Inc",
+            "rating": 5
+        },
+        {
+            "title": "Monster University",
+            "rating": 5
+        },
+        {
+            "title": "Essentials of Classic Italian Cooking",
+            "rating": 4
+        },
+        {
+            "title": "The Book Thief",
+            "rating": 5
+        },
+        {
+            "title": "Don Quijote de La Mancha",
+            "rating": 3
+        },
+        {
+            "title": "Born to Die",
+            "rating": 4
+        },
+        {
+            "title": "Blue Jeans",
+            "rating": 3
+        },
+        {
+            "title": "Rockabye",
+            "rating": 3
+        },
+    ]
+}
