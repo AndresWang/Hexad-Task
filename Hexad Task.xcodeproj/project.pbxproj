@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DDC91A422282004100D0E8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A412282004100D0E8E5 /* AppDelegate.swift */; };
-		DDC91A442282004100D0E8E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A432282004100D0E8E5 /* ViewController.swift */; };
 		DDC91A472282004100D0E8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A452282004100D0E8E5 /* Main.storyboard */; };
 		DDC91A492282004400D0E8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A482282004400D0E8E5 /* Assets.xcassets */; };
 		DDC91A4C2282004400D0E8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */; };
 		DDC91A572282004400D0E8E5 /* Hexad_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A562282004400D0E8E5 /* Hexad_TaskTests.swift */; };
 		DDC91A622282004400D0E8E5 /* Hexad_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */; };
+		DDC91A702282024D00D0E8E5 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A6F2282024D00D0E8E5 /* ListVC.swift */; };
+		DDC91A722282028800D0E8E5 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A712282028800D0E8E5 /* ListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		DDC91A3E2282004100D0E8E5 /* Hexad Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hexad Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC91A412282004100D0E8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDC91A432282004100D0E8E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDC91A462282004100D0E8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDC91A482282004400D0E8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC91A4B2282004400D0E8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		DDC91A5D2282004400D0E8E5 /* Hexad TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hexad TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexad_TaskUITests.swift; sourceTree = "<group>"; };
 		DDC91A632282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC91A6F2282024D00D0E8E5 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		DDC91A712282028800D0E8E5 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				DDC91A412282004100D0E8E5 /* AppDelegate.swift */,
-				DDC91A432282004100D0E8E5 /* ViewController.swift */,
+				DDC91A6F2282024D00D0E8E5 /* ListVC.swift */,
+				DDC91A712282028800D0E8E5 /* ListCell.swift */,
 				DDC91A452282004100D0E8E5 /* Main.storyboard */,
 				DDC91A482282004400D0E8E5 /* Assets.xcassets */,
 				DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC91A442282004100D0E8E5 /* ViewController.swift in Sources */,
+				DDC91A722282028800D0E8E5 /* ListCell.swift in Sources */,
+				DDC91A702282024D00D0E8E5 /* ListVC.swift in Sources */,
 				DDC91A422282004100D0E8E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVS6S5R9G3;
 				INFOPLIST_FILE = "Hexad Task/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVS6S5R9G3;
 				INFOPLIST_FILE = "Hexad Task/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
