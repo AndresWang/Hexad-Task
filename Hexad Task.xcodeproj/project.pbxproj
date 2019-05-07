@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDC91A422282004100D0E8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A412282004100D0E8E5 /* AppDelegate.swift */; };
+		DDC91A442282004100D0E8E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A432282004100D0E8E5 /* ViewController.swift */; };
+		DDC91A472282004100D0E8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A452282004100D0E8E5 /* Main.storyboard */; };
+		DDC91A492282004400D0E8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A482282004400D0E8E5 /* Assets.xcassets */; };
+		DDC91A4C2282004400D0E8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */; };
+		DDC91A572282004400D0E8E5 /* Hexad_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A562282004400D0E8E5 /* Hexad_TaskTests.swift */; };
+		DDC91A622282004400D0E8E5 /* Hexad_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDC91A532282004400D0E8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC91A362282004100D0E8E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC91A3D2282004100D0E8E5;
+			remoteInfo = "Hexad Task";
+		};
+		DDC91A5E2282004400D0E8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC91A362282004100D0E8E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC91A3D2282004100D0E8E5;
+			remoteInfo = "Hexad Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDC91A3E2282004100D0E8E5 /* Hexad Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hexad Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC91A412282004100D0E8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDC91A432282004100D0E8E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDC91A462282004100D0E8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDC91A482282004400D0E8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDC91A4B2282004400D0E8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDC91A4D2282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC91A522282004400D0E8E5 /* Hexad TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hexad TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC91A562282004400D0E8E5 /* Hexad_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexad_TaskTests.swift; sourceTree = "<group>"; };
+		DDC91A582282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC91A5D2282004400D0E8E5 /* Hexad TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hexad TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexad_TaskUITests.swift; sourceTree = "<group>"; };
+		DDC91A632282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDC91A3B2282004100D0E8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC91A4F2282004400D0E8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC91A5A2282004400D0E8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDC91A352282004100D0E8E5 = {
+			isa = PBXGroup;
+			children = (
+				DDC91A402282004100D0E8E5 /* Hexad Task */,
+				DDC91A552282004400D0E8E5 /* Hexad TaskTests */,
+				DDC91A602282004400D0E8E5 /* Hexad TaskUITests */,
+				DDC91A3F2282004100D0E8E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDC91A3F2282004100D0E8E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC91A3E2282004100D0E8E5 /* Hexad Task.app */,
+				DDC91A522282004400D0E8E5 /* Hexad TaskTests.xctest */,
+				DDC91A5D2282004400D0E8E5 /* Hexad TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDC91A402282004100D0E8E5 /* Hexad Task */ = {
+			isa = PBXGroup;
+			children = (
+				DDC91A412282004100D0E8E5 /* AppDelegate.swift */,
+				DDC91A432282004100D0E8E5 /* ViewController.swift */,
+				DDC91A452282004100D0E8E5 /* Main.storyboard */,
+				DDC91A482282004400D0E8E5 /* Assets.xcassets */,
+				DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */,
+				DDC91A4D2282004400D0E8E5 /* Info.plist */,
+			);
+			path = "Hexad Task";
+			sourceTree = "<group>";
+		};
+		DDC91A552282004400D0E8E5 /* Hexad TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC91A562282004400D0E8E5 /* Hexad_TaskTests.swift */,
+				DDC91A582282004400D0E8E5 /* Info.plist */,
+			);
+			path = "Hexad TaskTests";
+			sourceTree = "<group>";
+		};
+		DDC91A602282004400D0E8E5 /* Hexad TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */,
+				DDC91A632282004400D0E8E5 /* Info.plist */,
+			);
+			path = "Hexad TaskUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDC91A3D2282004100D0E8E5 /* Hexad Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC91A662282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad Task" */;
+			buildPhases = (
+				DDC91A3A2282004100D0E8E5 /* Sources */,
+				DDC91A3B2282004100D0E8E5 /* Frameworks */,
+				DDC91A3C2282004100D0E8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hexad Task";
+			productName = "Hexad Task";
+			productReference = DDC91A3E2282004100D0E8E5 /* Hexad Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDC91A512282004400D0E8E5 /* Hexad TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC91A692282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad TaskTests" */;
+			buildPhases = (
+				DDC91A4E2282004400D0E8E5 /* Sources */,
+				DDC91A4F2282004400D0E8E5 /* Frameworks */,
+				DDC91A502282004400D0E8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC91A542282004400D0E8E5 /* PBXTargetDependency */,
+			);
+			name = "Hexad TaskTests";
+			productName = "Hexad TaskTests";
+			productReference = DDC91A522282004400D0E8E5 /* Hexad TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDC91A5C2282004400D0E8E5 /* Hexad TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC91A6C2282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad TaskUITests" */;
+			buildPhases = (
+				DDC91A592282004400D0E8E5 /* Sources */,
+				DDC91A5A2282004400D0E8E5 /* Frameworks */,
+				DDC91A5B2282004400D0E8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC91A5F2282004400D0E8E5 /* PBXTargetDependency */,
+			);
+			name = "Hexad TaskUITests";
+			productName = "Hexad TaskUITests";
+			productReference = DDC91A5D2282004400D0E8E5 /* Hexad TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDC91A362282004100D0E8E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Chieh Teng Wang";
+				TargetAttributes = {
+					DDC91A3D2282004100D0E8E5 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					DDC91A512282004400D0E8E5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = DDC91A3D2282004100D0E8E5;
+					};
+					DDC91A5C2282004400D0E8E5 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = DDC91A3D2282004100D0E8E5;
+					};
+				};
+			};
+			buildConfigurationList = DDC91A392282004100D0E8E5 /* Build configuration list for PBXProject "Hexad Task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDC91A352282004100D0E8E5;
+			productRefGroup = DDC91A3F2282004100D0E8E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDC91A3D2282004100D0E8E5 /* Hexad Task */,
+				DDC91A512282004400D0E8E5 /* Hexad TaskTests */,
+				DDC91A5C2282004400D0E8E5 /* Hexad TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDC91A3C2282004100D0E8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC91A4C2282004400D0E8E5 /* LaunchScreen.storyboard in Resources */,
+				DDC91A492282004400D0E8E5 /* Assets.xcassets in Resources */,
+				DDC91A472282004100D0E8E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC91A502282004400D0E8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC91A5B2282004400D0E8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDC91A3A2282004100D0E8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC91A442282004100D0E8E5 /* ViewController.swift in Sources */,
+				DDC91A422282004100D0E8E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC91A4E2282004400D0E8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC91A572282004400D0E8E5 /* Hexad_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC91A592282004400D0E8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC91A622282004400D0E8E5 /* Hexad_TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDC91A542282004400D0E8E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC91A3D2282004100D0E8E5 /* Hexad Task */;
+			targetProxy = DDC91A532282004400D0E8E5 /* PBXContainerItemProxy */;
+		};
+		DDC91A5F2282004400D0E8E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC91A3D2282004100D0E8E5 /* Hexad Task */;
+			targetProxy = DDC91A5E2282004400D0E8E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDC91A452282004100D0E8E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC91A462282004100D0E8E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDC91A4B2282004400D0E8E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDC91A642282004400D0E8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDC91A652282004400D0E8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDC91A672282004400D0E8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hexad Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDC91A682282004400D0E8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hexad Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDC91A6A2282004400D0E8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hexad TaskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hexad Task.app/Hexad Task";
+			};
+			name = Debug;
+		};
+		DDC91A6B2282004400D0E8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hexad TaskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hexad Task.app/Hexad Task";
+			};
+			name = Release;
+		};
+		DDC91A6D2282004400D0E8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hexad TaskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hexad Task";
+			};
+			name = Debug;
+		};
+		DDC91A6E2282004400D0E8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Hexad TaskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hexad Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDC91A392282004100D0E8E5 /* Build configuration list for PBXProject "Hexad Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC91A642282004400D0E8E5 /* Debug */,
+				DDC91A652282004400D0E8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC91A662282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC91A672282004400D0E8E5 /* Debug */,
+				DDC91A682282004400D0E8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC91A692282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC91A6A2282004400D0E8E5 /* Debug */,
+				DDC91A6B2282004400D0E8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC91A6C2282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC91A6D2282004400D0E8E5 /* Debug */,
+				DDC91A6E2282004400D0E8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDC91A362282004100D0E8E5 /* Project object */;
+}
