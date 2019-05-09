@@ -122,13 +122,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DDB9B5672284763E004517ED /* Models */ = {
+		DDB9B5672284763E004517ED /* Data & Models */ = {
 			isa = PBXGroup;
 			children = (
+				DD6DA11F22820F99000C4D50 /* Favorite.json */,
 				DD6DA12122821133000C4D50 /* FavoriteModel.swift */,
 				DDB9B56522847635004517ED /* Favorite.swift */,
 			);
-			path = Models;
+			path = "Data & Models";
 			sourceTree = "<group>";
 		};
 		DDC91A352282004100D0E8E5 = {
@@ -164,8 +165,7 @@
 				DDC91A482282004400D0E8E5 /* Assets.xcassets */,
 				DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */,
 				DDC91A4D2282004400D0E8E5 /* Info.plist */,
-				DD6DA11F22820F99000C4D50 /* Favorite.json */,
-				DDB9B5672284763E004517ED /* Models */,
+				DDB9B5672284763E004517ED /* Data & Models */,
 			);
 			path = "Hexad Task";
 			sourceTree = "<group>";

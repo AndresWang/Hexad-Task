@@ -9,6 +9,7 @@
 import Foundation
 import RxDataSources
 
+// Our viewModel
 struct Favorite: IdentifiableType, Equatable {
     let identity: String
     var title: String
