@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol ListCellOutput: class {
+    func rateDidPress(cell: ListCell)
+}
 class ListCell: UITableViewCell {
+    // MARK: - Properties
+    weak var output: ListCellOutput?
+    
     // MARK: - IBOutlets
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var ratings: UIStackView!
@@ -21,11 +27,12 @@ class ListCell: UITableViewCell {
     
     // MARK: - IBActions
     @IBAction func ratePressed(_ sender: UIButton) {
-        
+        output?.rateDidPress(cell: self)
     }
     
     // MARK: - Boundary Methods
-    func config(item: FavoriteModel.FavoriteItem) {
+    func config(item: FavoriteModel.FavoriteItem, output: ListCellOutput) {
+        self.output = output
         title.text = item.title
         for (index, img) in ratings.arrangedSubviews.enumerated() {
             img.isHidden = (index + 1) > item.rating

@@ -28,12 +28,20 @@ class ListVC: UITableViewController {
     }
 }
 
+// MARK: - ListCellOutput
+extension ListVC: ListCellOutput {
+    func rateDidPress(cell: ListCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else {return}
+        print(indexPath.row)
+    }
+}
+
 // MARK: - Private Helpers
 private extension ListVC {
     func bindTableView() {
         tableView.dataSource = nil
         favorites.bind(to: tableView.rx.items(cellIdentifier: "ListCell", cellType: ListCell.self)) { row, item, cell in
-            cell.config(item: item)
+            cell.config(item: item, output: self)
             }.disposed(by: disposeBag)
     }
     func fetchData() {

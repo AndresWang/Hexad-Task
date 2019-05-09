@@ -8,6 +8,7 @@ target 'Hexad Task' do
   # Pods for Hexad Task
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'FloatRatingView', '~> 2.0.0'
 
   target 'Hexad TaskTests' do
     inherit! :search_paths

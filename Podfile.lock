@@ -1,4 +1,5 @@
 PODS:
+  - FloatRatingView (2.0)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -6,20 +7,23 @@ PODS:
     - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
+  - FloatRatingView (~> 2.0.0)
   - RxCocoa
   - RxSwift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FloatRatingView
     - RxAtomic
     - RxCocoa
     - RxSwift
 
 SPEC CHECKSUMS:
+  FloatRatingView: 857ab8f10040d06a42fc979f486c8f9fecd2f2e5
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
 
-PODFILE CHECKSUM: 36e18027585a7028bb24c7efa66da7035f95ec23
+PODFILE CHECKSUM: 9b8d81b750a69072141773d1a12aa22d554fcc1f
 
 COCOAPODS: 1.5.3
