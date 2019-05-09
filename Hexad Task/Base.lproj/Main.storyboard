@@ -32,13 +32,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Y5-Af-eyA">
-                                            <rect key="frame" x="20" y="15" width="332" height="14"/>
+                                            <rect key="frame" x="20" y="10" width="332" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y1v-tz-SMx" userLabel="RateStars">
-                                            <rect key="frame" x="20" y="34" width="115" height="15"/>
+                                            <rect key="frame" x="20" y="39" width="115" height="15"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="R7A-jy-LoC" userLabel="Star">
                                                     <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -98,9 +98,9 @@
                                         <constraint firstItem="2Y5-Af-eyA" firstAttribute="leading" secondItem="qzL-6D-fRg" secondAttribute="leading" constant="20" id="4Zj-4S-VAx"/>
                                         <constraint firstItem="2Y5-Af-eyA" firstAttribute="trailing" secondItem="YWO-bn-kaR" secondAttribute="leading" id="7Vb-7C-dUO"/>
                                         <constraint firstItem="y1v-tz-SMx" firstAttribute="top" secondItem="2Y5-Af-eyA" secondAttribute="bottom" constant="5" id="AgJ-EY-mzU"/>
-                                        <constraint firstAttribute="bottom" secondItem="y1v-tz-SMx" secondAttribute="bottom" constant="15" id="Hep-rE-94h"/>
+                                        <constraint firstAttribute="bottom" secondItem="y1v-tz-SMx" secondAttribute="bottom" constant="10" id="Hep-rE-94h"/>
                                         <constraint firstAttribute="trailing" secondItem="Sl7-Ml-Sv8" secondAttribute="trailing" id="VwJ-Kw-0kf"/>
-                                        <constraint firstItem="2Y5-Af-eyA" firstAttribute="top" secondItem="qzL-6D-fRg" secondAttribute="top" constant="15" id="fP2-78-36j"/>
+                                        <constraint firstItem="2Y5-Af-eyA" firstAttribute="top" secondItem="qzL-6D-fRg" secondAttribute="top" constant="10" id="fP2-78-36j"/>
                                         <constraint firstItem="Sl7-Ml-Sv8" firstAttribute="leading" secondItem="2Y5-Af-eyA" secondAttribute="leading" id="hRd-Sv-FRd"/>
                                         <constraint firstAttribute="bottom" secondItem="Sl7-Ml-Sv8" secondAttribute="bottom" id="rXW-7x-XJL"/>
                                         <constraint firstItem="YWO-bn-kaR" firstAttribute="centerY" secondItem="qzL-6D-fRg" secondAttribute="centerY" id="x1N-9M-AfZ"/>

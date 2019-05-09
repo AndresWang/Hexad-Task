@@ -18,8 +18,9 @@ class ListViewController: UITableViewController {
     // MARK: - Properties
     let disposeBag = DisposeBag()
     let ratingViewTag = 200
-    var ratingIndex: Int?
+    var ratingID: String?
     let favorites: BehaviorRelay<[Section]> = BehaviorRelay(value: [])
+    var countingTimer: Timer?
     
     // MARK: - IBOutlets
     @IBOutlet var ratingView: UIView!
@@ -29,8 +30,17 @@ class ListViewController: UITableViewController {
     @IBAction func submitPressed(_ sender: Any) {
         dismissRatingView()
     }
-    @IBAction func randomRatingPressed(_ sender: Any) {
-        
+    @IBAction func randomRatingPressed(_ sender: UIBarButtonItem) {
+        let offText = "RANDOM RATING"
+        if sender.title == "RANDOM RATING" {
+            sender.title = "RANDOMING..."
+            sender.tintColor = .red
+            setTimer()
+        } else {
+            sender.title = offText
+            sender.tintColor = nil
+            countingTimer?.invalidate()
+        }
     }
     
     // MARK: - View Events
@@ -45,8 +55,9 @@ class ListViewController: UITableViewController {
 extension ListViewController: ListCellOutput {
     func rateDidPress(cell: ListCell) {
         guard let indexPath = tableView.indexPath(for: cell) else {return}
-        self.ratingIndex = indexPath.row
-        showRatingView(rating: section.items[indexPath.row].rating)
+        let selectedItem = section.items[indexPath.row]
+        self.ratingID = selectedItem.identity
+        showRatingView(rating: selectedItem.rating)
     }
 }
 
@@ -58,6 +69,7 @@ private extension ListViewController {
     }
     func config() {
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 55
         ratingView.translatesAutoresizingMaskIntoConstraints = false
         ratingView.tag = ratingViewTag
     }
@@ -98,13 +110,32 @@ private extension ListViewController {
         ])
     }
     func dismissRatingView() {
-        guard let index = ratingIndex else {return}
+        guard let index = section.items.firstIndex(where: {$0.identity == ratingID}) else {return}
         let rating = Int(cosmosView.rating)
-        var favoriteArray = favorites.value[0].items
-        favoriteArray[index].rating = rating
-        favoriteArray.sort{ $0.rating > $1.rating }
-        favorites.accept([Section(model: "", items: favoriteArray)])
+        var items = section.items
+        items[index].rating = rating
+        items.sort{ $0.rating > $1.rating }
+        favorites.accept([Section(model: "", items: items)])
         ratingView.removeFromSuperview()
-        self.ratingIndex = nil
+        self.ratingID = nil
+    }
+    @objc func randomRating() {
+        let randIndex = Int.random(in: 0..<section.items.count)
+        var items = section.items
+        items[randIndex].rating = Int.random(in: 1...5)
+        items.sort{ $0.rating > $1.rating }
+        favorites.accept([Section(model: "", items: items)])
+        
+        // Set timer to keep it going
+        setTimer()
+    }
+    func setTimer() {
+        // Create and configure the timer for random intervals
+        let randInterval = Double.random(in: 1...10)
+        countingTimer = Timer.scheduledTimer(timeInterval: randInterval, target: self, selector: #selector(randomRating), userInfo: nil, repeats: false)
+        // Optimize the timer for increased power savings and responsiveness
+        countingTimer?.tolerance = randInterval / 2
+        // Helps UI stay responsive even with timer.
+        RunLoop.current.add(countingTimer!, forMode: RunLoop.Mode.common)
     }
 }
