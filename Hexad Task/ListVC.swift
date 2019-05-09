@@ -9,12 +9,23 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Cosmos
 
 class ListVC: UITableViewController {
+    // MARK: - Properties
     let disposeBag = DisposeBag()
     let favorites: BehaviorRelay<[FavoriteModel.FavoriteItem]> = BehaviorRelay(value: [])
+    let ratingViewTag = 200
+    var ratingIndex: Int?
+    
+    // MARK: - IBOutlets
+    @IBOutlet var ratingView: UIView!
+    @IBOutlet var cosmosView: CosmosView!
     
     // MARK: - IBActions
+    @IBAction func submitPressed(_ sender: Any) {
+        dismissRatingView()
+    }
     @IBAction func randomRatingPressed(_ sender: Any) {
         
     }
@@ -22,7 +33,7 @@ class ListVC: UITableViewController {
     // MARK: - View Events
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = UITableView.automaticDimension
+        config()
         bindTableView()
         fetchData()
     }
@@ -32,12 +43,18 @@ class ListVC: UITableViewController {
 extension ListVC: ListCellOutput {
     func rateDidPress(cell: ListCell) {
         guard let indexPath = tableView.indexPath(for: cell) else {return}
-        print(indexPath.row)
+        self.ratingIndex = indexPath.row
+        showRatingView(rating: favorites.value[indexPath.row].rating)
     }
 }
 
 // MARK: - Private Helpers
 private extension ListVC {
+    func config() {
+        tableView.rowHeight = UITableView.automaticDimension
+        ratingView.translatesAutoresizingMaskIntoConstraints = false
+        ratingView.tag = ratingViewTag
+    }
     func bindTableView() {
         tableView.dataSource = nil
         favorites.bind(to: tableView.rx.items(cellIdentifier: "ListCell", cellType: ListCell.self)) { row, item, cell in
@@ -51,10 +68,29 @@ private extension ListVC {
         do {
             let data = try Data(contentsOf: url)
             let result = try JSONDecoder().decode(FavoriteModel.self, from: data)
-            self.favorites.accept(result.favorites)
+            self.favorites.accept(result.favorites.sorted {$0.rating > $1.rating})
         } catch let error {
             print("Fetch json data error: \(error)")
         }
     }
-
+    func showRatingView(rating: Int) {
+        guard let navView = navigationController?.view else { return }
+        cosmosView.rating = Double(rating)
+        navigationController?.view.addSubview(ratingView)
+        NSLayoutConstraint.activate([
+            ratingView.heightAnchor.constraint(equalToConstant: 140),
+            ratingView.widthAnchor.constraint(equalToConstant: 180),
+            ratingView.centerXAnchor.constraint(equalTo: navView.centerXAnchor),
+            ratingView.centerYAnchor.constraint(equalTo: navView.centerYAnchor)
+        ])
+    }
+    func dismissRatingView() {
+        guard let index = ratingIndex else {return}
+        let rating = Int(cosmosView.rating)
+        var favoriteArray = favorites.value
+        favoriteArray[index].rating = rating
+        favorites.accept(favoriteArray)
+        ratingView.removeFromSuperview()
+        self.ratingIndex = nil
+    }
 }
