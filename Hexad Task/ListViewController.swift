@@ -14,7 +14,7 @@ import Cosmos
 
 typealias Section = AnimatableSectionModel<String, Favorite>
 
-class ListVC: UITableViewController {
+class ListViewController: UITableViewController {
     // MARK: - Properties
     let disposeBag = DisposeBag()
     let ratingViewTag = 200
@@ -42,7 +42,7 @@ class ListVC: UITableViewController {
     }
 }
 // MARK: - ListCellOutput
-extension ListVC: ListCellOutput {
+extension ListViewController: ListCellOutput {
     func rateDidPress(cell: ListCell) {
         guard let indexPath = tableView.indexPath(for: cell) else {return}
         self.ratingIndex = indexPath.row
@@ -51,7 +51,7 @@ extension ListVC: ListCellOutput {
 }
 
 // MARK: - Private Helpers
-private extension ListVC {
+private extension ListViewController {
     var section: Section {
         // We only have 1 section
         return favorites.value[0]

@@ -19,7 +19,7 @@
 		DDC91A4C2282004400D0E8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */; };
 		DDC91A572282004400D0E8E5 /* Hexad_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A562282004400D0E8E5 /* Hexad_TaskTests.swift */; };
 		DDC91A622282004400D0E8E5 /* Hexad_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */; };
-		DDC91A702282024D00D0E8E5 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A6F2282024D00D0E8E5 /* ListVC.swift */; };
+		DDC91A702282024D00D0E8E5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A6F2282024D00D0E8E5 /* ListViewController.swift */; };
 		DDC91A722282028800D0E8E5 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A712282028800D0E8E5 /* ListCell.swift */; };
 		E139009D4715892B743DFD1E /* Pods_Hexad_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59879EAD2BED0499E772EE79 /* Pods_Hexad_TaskUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,7 @@
 		DDC91A5D2282004400D0E8E5 /* Hexad TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hexad TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexad_TaskUITests.swift; sourceTree = "<group>"; };
 		DDC91A632282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDC91A6F2282024D00D0E8E5 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+		DDC91A6F2282024D00D0E8E5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		DDC91A712282028800D0E8E5 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		E41C4A2488B5EAA7D9DE6AA7 /* Pods-Hexad TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad TaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad TaskTests/Pods-Hexad TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				DDC91A412282004100D0E8E5 /* AppDelegate.swift */,
-				DDC91A6F2282024D00D0E8E5 /* ListVC.swift */,
+				DDC91A6F2282024D00D0E8E5 /* ListViewController.swift */,
 				DDC91A712282028800D0E8E5 /* ListCell.swift */,
 				DDC91A452282004100D0E8E5 /* Main.storyboard */,
 				DDC91A482282004400D0E8E5 /* Assets.xcassets */,
@@ -429,7 +429,7 @@
 				DDB9B56622847635004517ED /* Favorite.swift in Sources */,
 				DDC91A722282028800D0E8E5 /* ListCell.swift in Sources */,
 				DD6DA12222821133000C4D50 /* FavoriteModel.swift in Sources */,
-				DDC91A702282024D00D0E8E5 /* ListVC.swift in Sources */,
+				DDC91A702282024D00D0E8E5 /* ListViewController.swift in Sources */,
 				DDC91A422282004100D0E8E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
