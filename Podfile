@@ -8,6 +8,7 @@ target 'Hexad Task' do
   # Pods for Hexad Task
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RxDataSources', '~> 3.0'
   pod 'Cosmos', '~> 19.0'
 
   target 'Hexad TaskTests' do

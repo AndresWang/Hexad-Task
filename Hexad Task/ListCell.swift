@@ -31,7 +31,7 @@ class ListCell: UITableViewCell {
     }
     
     // MARK: - Boundary Methods
-    func config(item: FavoriteModel.FavoriteItem, output: ListCellOutput) {
+    func config(item: Favorite, output: ListCellOutput) {
         self.output = output
         title.text = item.title
         for (index, img) in ratings.arrangedSubviews.enumerated() {

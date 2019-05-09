@@ -12,6 +12,7 @@
 		DD6DA12022820F99000C4D50 /* Favorite.json in Resources */ = {isa = PBXBuildFile; fileRef = DD6DA11F22820F99000C4D50 /* Favorite.json */; };
 		DD6DA12222821133000C4D50 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DA12122821133000C4D50 /* FavoriteModel.swift */; };
 		DDAAE76122840F6C00C2E1B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DDAAE76022840F6C00C2E1B2 /* Podfile */; };
+		DDB9B56622847635004517ED /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9B56522847635004517ED /* Favorite.swift */; };
 		DDC91A422282004100D0E8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A412282004100D0E8E5 /* AppDelegate.swift */; };
 		DDC91A472282004100D0E8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A452282004100D0E8E5 /* Main.storyboard */; };
 		DDC91A492282004400D0E8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A482282004400D0E8E5 /* Assets.xcassets */; };
@@ -51,7 +52,8 @@
 		9FBB40BE0C4AE2A9305D9A5B /* Pods-Hexad TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad TaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad TaskUITests/Pods-Hexad TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD6DA11F22820F99000C4D50 /* Favorite.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Favorite.json; sourceTree = "<group>"; };
 		DD6DA12122821133000C4D50 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
-		DDAAE76022840F6C00C2E1B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DDAAE76022840F6C00C2E1B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DDB9B56522847635004517ED /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		DDC91A3E2282004100D0E8E5 /* Hexad Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hexad Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC91A412282004100D0E8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC91A462282004100D0E8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +122,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DDB9B5672284763E004517ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD6DA12122821133000C4D50 /* FavoriteModel.swift */,
+				DDB9B56522847635004517ED /* Favorite.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DDC91A352282004100D0E8E5 = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +165,7 @@
 				DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */,
 				DDC91A4D2282004400D0E8E5 /* Info.plist */,
 				DD6DA11F22820F99000C4D50 /* Favorite.json */,
-				DD6DA12122821133000C4D50 /* FavoriteModel.swift */,
+				DDB9B5672284763E004517ED /* Models */,
 			);
 			path = "Hexad Task";
 			sourceTree = "<group>";
@@ -364,8 +375,10 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Hexad Task/Pods-Hexad Task-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -373,8 +386,10 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB9B56622847635004517ED /* Favorite.swift in Sources */,
 				DDC91A722282028800D0E8E5 /* ListCell.swift in Sources */,
 				DD6DA12222821133000C4D50 /* FavoriteModel.swift in Sources */,
 				DDC91A702282024D00D0E8E5 /* ListVC.swift in Sources */,

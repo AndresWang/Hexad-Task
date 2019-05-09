@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "202A2FBFAA1FC02CD878D3DC057E289A"
+               BlueprintIdentifier = "C8DA999F642AB0FB889DF13B192E325A"
                BuildableName = "Pods_Hexad_Task.framework"
                BlueprintName = "Pods-Hexad Task"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "202A2FBFAA1FC02CD878D3DC057E289A"
+            BlueprintIdentifier = "C8DA999F642AB0FB889DF13B192E325A"
             BuildableName = "Pods_Hexad_Task.framework"
             BlueprintName = "Pods-Hexad Task"
             ReferencedContainer = "container:Pods.xcodeproj">
