@@ -24,5 +24,11 @@ class ListCell: UITableViewCell {
         
     }
     
-
+    // MARK: - Boundary Methods
+    func config(item: FavoriteModel.FavoriteItem) {
+        title.text = item.title
+        for (index, img) in ratings.arrangedSubviews.enumerated() {
+            img.isHidden = (index + 1) > item.rating
+        }
+    }
 }

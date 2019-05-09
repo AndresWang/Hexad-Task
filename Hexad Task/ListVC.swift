@@ -7,46 +7,43 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ListVC: UITableViewController {
-    var favorites: [FavoriteModel.FavoriteItem] = []
+    let disposeBag = DisposeBag()
+    let favorites: BehaviorRelay<[FavoriteModel.FavoriteItem]> = BehaviorRelay(value: [])
     
     // MARK: - IBActions
     @IBAction func randomRatingPressed(_ sender: Any) {
+        
     }
     
     // MARK: - View Events
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = UITableView.automaticDimension
+        bindTableView()
         fetchData()
-    }
-
-    // MARK: - Table view data source
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favorites.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath) as! ListCell
-        cell.title.text = favorites[indexPath.row].title
-        for (index, img) in cell.ratings.arrangedSubviews.enumerated() {
-            img.isHidden = (index + 1) > favorites[indexPath.row].rating
-        }
-        return cell
     }
 }
 
 // MARK: - Private Helpers
 private extension ListVC {
+    func bindTableView() {
+        tableView.dataSource = nil
+        favorites.bind(to: tableView.rx.items(cellIdentifier: "ListCell", cellType: ListCell.self)) { row, item, cell in
+            cell.config(item: item)
+            }.disposed(by: disposeBag)
+    }
     func fetchData() {
         let path = Bundle.main.path(forResource: "Favorite", ofType: "json")
         let url = URL(fileURLWithPath: path!)
-        
+
         do {
             let data = try Data(contentsOf: url)
             let result = try JSONDecoder().decode(FavoriteModel.self, from: data)
-            self.favorites = result.favorites
+            self.favorites.accept(result.favorites)
         } catch let error {
             print("Fetch json data error: \(error)")
         }
