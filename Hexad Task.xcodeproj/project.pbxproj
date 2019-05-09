@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29EDD82AD2895BEA6BE8AF76 /* Pods_Hexad_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF4223B17B242FC0DAF76E8 /* Pods_Hexad_Task.framework */; };
+		C8394503C2F0B1A1070AA00E /* Pods_Hexad_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 378E523C204B4D6DE64B0B71 /* Pods_Hexad_TaskTests.framework */; };
 		DD6DA12022820F99000C4D50 /* Favorite.json in Resources */ = {isa = PBXBuildFile; fileRef = DD6DA11F22820F99000C4D50 /* Favorite.json */; };
 		DD6DA12222821133000C4D50 /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DA12122821133000C4D50 /* FavoriteModel.swift */; };
+		DDAAE76122840F6C00C2E1B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DDAAE76022840F6C00C2E1B2 /* Podfile */; };
 		DDC91A422282004100D0E8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A412282004100D0E8E5 /* AppDelegate.swift */; };
 		DDC91A472282004100D0E8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A452282004100D0E8E5 /* Main.storyboard */; };
 		DDC91A492282004400D0E8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A482282004400D0E8E5 /* Assets.xcassets */; };
@@ -17,6 +20,7 @@
 		DDC91A622282004400D0E8E5 /* Hexad_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */; };
 		DDC91A702282024D00D0E8E5 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A6F2282024D00D0E8E5 /* ListVC.swift */; };
 		DDC91A722282028800D0E8E5 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A712282028800D0E8E5 /* ListCell.swift */; };
+		E139009D4715892B743DFD1E /* Pods_Hexad_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59879EAD2BED0499E772EE79 /* Pods_Hexad_TaskUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02300A945249DEB32CE8CEBB /* Pods-Hexad TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad TaskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad TaskTests/Pods-Hexad TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		0EF4223B17B242FC0DAF76E8 /* Pods_Hexad_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hexad_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		378E523C204B4D6DE64B0B71 /* Pods_Hexad_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hexad_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C27EA686E36D454743FDE9 /* Pods-Hexad Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad Task.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad Task/Pods-Hexad Task.release.xcconfig"; sourceTree = "<group>"; };
+		59879EAD2BED0499E772EE79 /* Pods_Hexad_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hexad_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D93A7E672ECAB22E971621 /* Pods-Hexad TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad TaskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad TaskUITests/Pods-Hexad TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C184E34C27CED7CAEF36901 /* Pods-Hexad Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad Task.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad Task/Pods-Hexad Task.debug.xcconfig"; sourceTree = "<group>"; };
+		9FBB40BE0C4AE2A9305D9A5B /* Pods-Hexad TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad TaskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad TaskUITests/Pods-Hexad TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD6DA11F22820F99000C4D50 /* Favorite.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Favorite.json; sourceTree = "<group>"; };
 		DD6DA12122821133000C4D50 /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		DDAAE76022840F6C00C2E1B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		DDC91A3E2282004100D0E8E5 /* Hexad Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hexad Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC91A412282004100D0E8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC91A462282004100D0E8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +66,7 @@
 		DDC91A632282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC91A6F2282024D00D0E8E5 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		DDC91A712282028800D0E8E5 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		E41C4A2488B5EAA7D9DE6AA7 /* Pods-Hexad TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad TaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad TaskTests/Pods-Hexad TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29EDD82AD2895BEA6BE8AF76 /* Pods_Hexad_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8394503C2F0B1A1070AA00E /* Pods_Hexad_TaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,19 +90,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E139009D4715892B743DFD1E /* Pods_Hexad_TaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56122F3E93CB2647708A08D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C184E34C27CED7CAEF36901 /* Pods-Hexad Task.debug.xcconfig */,
+				44C27EA686E36D454743FDE9 /* Pods-Hexad Task.release.xcconfig */,
+				E41C4A2488B5EAA7D9DE6AA7 /* Pods-Hexad TaskTests.debug.xcconfig */,
+				02300A945249DEB32CE8CEBB /* Pods-Hexad TaskTests.release.xcconfig */,
+				79D93A7E672ECAB22E971621 /* Pods-Hexad TaskUITests.debug.xcconfig */,
+				9FBB40BE0C4AE2A9305D9A5B /* Pods-Hexad TaskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3FA920D9C74C78B43DB15DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EF4223B17B242FC0DAF76E8 /* Pods_Hexad_Task.framework */,
+				378E523C204B4D6DE64B0B71 /* Pods_Hexad_TaskTests.framework */,
+				59879EAD2BED0499E772EE79 /* Pods_Hexad_TaskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DDC91A352282004100D0E8E5 = {
 			isa = PBXGroup;
 			children = (
+				DDAAE76022840F6C00C2E1B2 /* Podfile */,
 				DDC91A402282004100D0E8E5 /* Hexad Task */,
 				DDC91A552282004400D0E8E5 /* Hexad TaskTests */,
 				DDC91A602282004400D0E8E5 /* Hexad TaskUITests */,
 				DDC91A3F2282004100D0E8E5 /* Products */,
+				56122F3E93CB2647708A08D0 /* Pods */,
+				A3FA920D9C74C78B43DB15DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDC91A662282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad Task" */;
 			buildPhases = (
+				A6AAFA09D7EE0D9C989CA8BB /* [CP] Check Pods Manifest.lock */,
 				DDC91A3A2282004100D0E8E5 /* Sources */,
 				DDC91A3B2282004100D0E8E5 /* Frameworks */,
 				DDC91A3C2282004100D0E8E5 /* Resources */,
+				7640B513CDA46F771150F26F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDC91A692282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad TaskTests" */;
 			buildPhases = (
+				03A8C916BD09888E3F5CFB22 /* [CP] Check Pods Manifest.lock */,
 				DDC91A4E2282004400D0E8E5 /* Sources */,
 				DDC91A4F2282004400D0E8E5 /* Frameworks */,
 				DDC91A502282004400D0E8E5 /* Resources */,
@@ -176,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDC91A6C2282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad TaskUITests" */;
 			buildPhases = (
+				4F69AF03C6C7847C929868F4 /* [CP] Check Pods Manifest.lock */,
 				DDC91A592282004400D0E8E5 /* Sources */,
 				DDC91A5A2282004400D0E8E5 /* Frameworks */,
 				DDC91A5B2282004400D0E8E5 /* Resources */,
@@ -238,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAAE76122840F6C00C2E1B2 /* Podfile in Resources */,
 				DDC91A4C2282004400D0E8E5 /* LaunchScreen.storyboard in Resources */,
 				DD6DA12022820F99000C4D50 /* Favorite.json in Resources */,
 				DDC91A492282004400D0E8E5 /* Assets.xcassets in Resources */,
@@ -260,6 +308,101 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03A8C916BD09888E3F5CFB22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hexad TaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F69AF03C6C7847C929868F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hexad TaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7640B513CDA46F771150F26F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hexad Task/Pods-Hexad Task-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hexad Task/Pods-Hexad Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6AAFA09D7EE0D9C989CA8BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hexad Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DDC91A3A2282004100D0E8E5 /* Sources */ = {
@@ -442,6 +585,7 @@
 		};
 		DDC91A672282004400D0E8E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C184E34C27CED7CAEF36901 /* Pods-Hexad Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,6 +604,7 @@
 		};
 		DDC91A682282004400D0E8E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C27EA686E36D454743FDE9 /* Pods-Hexad Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +623,7 @@
 		};
 		DDC91A6A2282004400D0E8E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E41C4A2488B5EAA7D9DE6AA7 /* Pods-Hexad TaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +644,7 @@
 		};
 		DDC91A6B2282004400D0E8E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02300A945249DEB32CE8CEBB /* Pods-Hexad TaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +665,7 @@
 		};
 		DDC91A6D2282004400D0E8E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D93A7E672ECAB22E971621 /* Pods-Hexad TaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +685,7 @@
 		};
 		DDC91A6E2282004400D0E8E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FBB40BE0C4AE2A9305D9A5B /* Pods-Hexad TaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
