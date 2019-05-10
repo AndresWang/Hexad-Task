@@ -13,17 +13,11 @@ protocol ListCellOutput: class {
 }
 class ListCell: UITableViewCell {
     // MARK: - Properties
-    weak var output: ListCellOutput?
+    weak private var output: ListCellOutput?
     
     // MARK: - IBOutlets
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var ratings: UIStackView!
-    
-    // MARK: - View Events
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak private var title: UILabel!
+    @IBOutlet weak private var ratings: UIStackView!
     
     // MARK: - IBActions
     @IBAction func ratePressed(_ sender: UIButton) {
@@ -31,7 +25,7 @@ class ListCell: UITableViewCell {
     }
     
     // MARK: - Boundary Methods
-    func config(item: Favorite, output: ListCellOutput) {
+    func config(item: FavoriteViewModel, output: ListCellOutput) {
         self.output = output
         title.text = item.title
         for (index, img) in ratings.arrangedSubviews.enumerated() {

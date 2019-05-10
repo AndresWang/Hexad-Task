@@ -162,7 +162,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NV5-4e-C7Y" customClass="CosmosView" customModule="Cosmos">
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NV5-4e-C7Y" customClass="CosmosView" customModule="Cosmos">
                             <rect key="frame" x="37" y="50.5" width="145" height="25"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <viewLayoutGuide key="safeArea" id="wvv-ge-lCl"/>
