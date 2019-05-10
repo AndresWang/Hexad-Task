@@ -17,23 +17,14 @@
 		DDC91A472282004100D0E8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A452282004100D0E8E5 /* Main.storyboard */; };
 		DDC91A492282004400D0E8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A482282004400D0E8E5 /* Assets.xcassets */; };
 		DDC91A4C2282004400D0E8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */; };
-		DDC91A572282004400D0E8E5 /* Hexad_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A562282004400D0E8E5 /* Hexad_TaskTests.swift */; };
-		DDC91A622282004400D0E8E5 /* Hexad_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */; };
 		DDC91A702282024D00D0E8E5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A6F2282024D00D0E8E5 /* ListViewController.swift */; };
 		DDC91A722282028800D0E8E5 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A712282028800D0E8E5 /* ListCell.swift */; };
+		DDCD747622857DEF008F1E52 /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCD747522857DEF008F1E52 /* ListInteractorTests.swift */; };
 		DDFC2407228564EE005F152A /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFC2406228564EE005F152A /* ListInteractor.swift */; };
-		E139009D4715892B743DFD1E /* Pods_Hexad_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59879EAD2BED0499E772EE79 /* Pods_Hexad_TaskUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		DDC91A532282004400D0E8E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DDC91A362282004100D0E8E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DDC91A3D2282004100D0E8E5;
-			remoteInfo = "Hexad Task";
-		};
-		DDC91A5E2282004400D0E8E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DDC91A362282004100D0E8E5 /* Project object */;
 			proxyType = 1;
@@ -62,13 +53,10 @@
 		DDC91A4B2282004400D0E8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDC91A4D2282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC91A522282004400D0E8E5 /* Hexad TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hexad TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDC91A562282004400D0E8E5 /* Hexad_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexad_TaskTests.swift; sourceTree = "<group>"; };
 		DDC91A582282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDC91A5D2282004400D0E8E5 /* Hexad TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hexad TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hexad_TaskUITests.swift; sourceTree = "<group>"; };
-		DDC91A632282004400D0E8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC91A6F2282024D00D0E8E5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		DDC91A712282028800D0E8E5 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		DDCD747522857DEF008F1E52 /* ListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorTests.swift; sourceTree = "<group>"; };
 		DDFC2406228564EE005F152A /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
 		E41C4A2488B5EAA7D9DE6AA7 /* Pods-Hexad TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hexad TaskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hexad TaskTests/Pods-Hexad TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,14 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8394503C2F0B1A1070AA00E /* Pods_Hexad_TaskTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DDC91A5A2282004400D0E8E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E139009D4715892B743DFD1E /* Pods_Hexad_TaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +120,6 @@
 				DDAAE76022840F6C00C2E1B2 /* Podfile */,
 				DDC91A402282004100D0E8E5 /* Hexad Task */,
 				DDC91A552282004400D0E8E5 /* Hexad TaskTests */,
-				DDC91A602282004400D0E8E5 /* Hexad TaskUITests */,
 				DDC91A3F2282004100D0E8E5 /* Products */,
 				56122F3E93CB2647708A08D0 /* Pods */,
 				A3FA920D9C74C78B43DB15DC /* Frameworks */,
@@ -152,7 +131,6 @@
 			children = (
 				DDC91A3E2282004100D0E8E5 /* Hexad Task.app */,
 				DDC91A522282004400D0E8E5 /* Hexad TaskTests.xctest */,
-				DDC91A5D2282004400D0E8E5 /* Hexad TaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,19 +152,10 @@
 		DDC91A552282004400D0E8E5 /* Hexad TaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				DDC91A562282004400D0E8E5 /* Hexad_TaskTests.swift */,
+				DDCD747522857DEF008F1E52 /* ListInteractorTests.swift */,
 				DDC91A582282004400D0E8E5 /* Info.plist */,
 			);
 			path = "Hexad TaskTests";
-			sourceTree = "<group>";
-		};
-		DDC91A602282004400D0E8E5 /* Hexad TaskUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DDC91A612282004400D0E8E5 /* Hexad_TaskUITests.swift */,
-				DDC91A632282004400D0E8E5 /* Info.plist */,
-			);
-			path = "Hexad TaskUITests";
 			sourceTree = "<group>";
 		};
 		DDFC240822856500005F152A /* ListScene */ = {
@@ -240,25 +209,6 @@
 			productReference = DDC91A522282004400D0E8E5 /* Hexad TaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DDC91A5C2282004400D0E8E5 /* Hexad TaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DDC91A6C2282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad TaskUITests" */;
-			buildPhases = (
-				4F69AF03C6C7847C929868F4 /* [CP] Check Pods Manifest.lock */,
-				DDC91A592282004400D0E8E5 /* Sources */,
-				DDC91A5A2282004400D0E8E5 /* Frameworks */,
-				DDC91A5B2282004400D0E8E5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DDC91A5F2282004400D0E8E5 /* PBXTargetDependency */,
-			);
-			name = "Hexad TaskUITests";
-			productName = "Hexad TaskUITests";
-			productReference = DDC91A5D2282004400D0E8E5 /* Hexad TaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -274,10 +224,7 @@
 					};
 					DDC91A512282004400D0E8E5 = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = DDC91A3D2282004100D0E8E5;
-					};
-					DDC91A5C2282004400D0E8E5 = {
-						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = DDC91A3D2282004100D0E8E5;
 					};
 				};
@@ -297,7 +244,6 @@
 			targets = (
 				DDC91A3D2282004100D0E8E5 /* Hexad Task */,
 				DDC91A512282004400D0E8E5 /* Hexad TaskTests */,
-				DDC91A5C2282004400D0E8E5 /* Hexad TaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -316,13 +262,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DDC91A502282004400D0E8E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DDC91A5B2282004400D0E8E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,28 +287,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Hexad TaskTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F69AF03C6C7847C929868F4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Hexad TaskUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -450,15 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC91A572282004400D0E8E5 /* Hexad_TaskTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DDC91A592282004400D0E8E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DDC91A622282004400D0E8E5 /* Hexad_TaskUITests.swift in Sources */,
+				DDCD747622857DEF008F1E52 /* ListInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,11 +378,6 @@
 			isa = PBXTargetDependency;
 			target = DDC91A3D2282004100D0E8E5 /* Hexad Task */;
 			targetProxy = DDC91A532282004400D0E8E5 /* PBXContainerItemProxy */;
-		};
-		DDC91A5F2282004400D0E8E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DDC91A3D2282004100D0E8E5 /* Hexad Task */;
-			targetProxy = DDC91A5E2282004400D0E8E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -657,7 +561,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVS6S5R9G3;
 				INFOPLIST_FILE = "Hexad TaskTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,6 +572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-TaskTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hexad Task.app/Hexad Task";
@@ -678,7 +585,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RVS6S5R9G3;
 				INFOPLIST_FILE = "Hexad TaskTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -690,46 +599,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hexad Task.app/Hexad Task";
-			};
-			name = Release;
-		};
-		DDC91A6D2282004400D0E8E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79D93A7E672ECAB22E971621 /* Pods-Hexad TaskUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hexad TaskUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-TaskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Hexad Task";
-			};
-			name = Debug;
-		};
-		DDC91A6E2282004400D0E8E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FBB40BE0C4AE2A9305D9A5B /* Pods-Hexad TaskUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Hexad TaskUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ChiehTengWang.Hexad-TaskUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Hexad Task";
 			};
 			name = Release;
 		};
@@ -759,15 +628,6 @@
 			buildConfigurations = (
 				DDC91A6A2282004400D0E8E5 /* Debug */,
 				DDC91A6B2282004400D0E8E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DDC91A6C2282004400D0E8E5 /* Build configuration list for PBXNativeTarget "Hexad TaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDC91A6D2282004400D0E8E5 /* Debug */,
-				DDC91A6E2282004400D0E8E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
