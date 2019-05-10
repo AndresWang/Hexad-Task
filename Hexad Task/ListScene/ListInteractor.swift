@@ -31,7 +31,7 @@ class ListInteractor: ListInteractorDelegate {
     
     // MARK: - ListInteractorDelegate
     func fetchData() {
-        let favorites = DataStore.shared.fetchData()
+        let favorites = DataStore.shared.fetchData().map {$0.toViewModel()}
         let sortedFavorites = favorites.sorted {$0.rating > $1.rating}
         self.favorites.accept([Section(model: "", items: sortedFavorites)])
     }

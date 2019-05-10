@@ -15,8 +15,8 @@ struct Favorite: Codable {
     struct FavoriteItem: Codable {
         var title: String
         var rating: Int
-    }
-    func toViewModel() -> [FavoriteViewModel] {
-        return favorites.map {FavoriteViewModel(identity: UUID().uuidString, title: $0.title, rating: $0.rating)}
+        func toViewModel() -> FavoriteViewModel {
+            return FavoriteViewModel(identity: UUID().uuidString, title: title, rating: rating)
+        }
     }
 }
