@@ -22,7 +22,7 @@ protocol ListInteractorDelegate {
     func userDidFinishRating(newRating: Int)
 }
 
-// Note: Interactor is our business logic, which serves as a coordinator to get works done by talking to other services such as data store and api, etc.
+// Note: Interactor is our business logic, which serves as a coordinator to get works done in cooperation with other services such as data store and api, etc.
 class ListInteractor: ListInteractorDelegate {
     let favorites: BehaviorRelay<[Section]> = BehaviorRelay(value: [])
     let disposeBag = DisposeBag()
