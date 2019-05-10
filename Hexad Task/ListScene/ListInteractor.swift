@@ -22,26 +22,18 @@ protocol ListInteractorDelegate {
     func userDidFinishRating(newRating: Int)
 }
 
-// Note: For a real app the interactor normally will talk with a seperated dataStore service, and most of the time an api service as well.
+// Note: Interactor is our business logic, which serves as a coordinator to get works done by talking to other services such as data store and api, etc.
 class ListInteractor: ListInteractorDelegate {
-    private let favorites: BehaviorRelay<[Section]> = BehaviorRelay(value: [])
-    private let disposeBag = DisposeBag()
-    private var ratingID: String?
-    private var timer: Timer?
+    let favorites: BehaviorRelay<[Section]> = BehaviorRelay(value: [])
+    let disposeBag = DisposeBag()
+    var selectedID: String?
+    var timer: Timer?
     
     // MARK: - ListInteractorDelegate
     func fetchData() {
-        let path = Bundle.main.path(forResource: "Favorite", ofType: "json")
-        let url = URL(fileURLWithPath: path!)
-        
-        do {
-            let data = try Data(contentsOf: url)
-            let result = try JSONDecoder().decode(Favorite.self, from: data)
-            let sortedFavorites = result.toViewModel().sorted {$0.rating > $1.rating}
-            self.favorites.accept([Section(model: "", items: sortedFavorites)])
-        } catch let error {
-            print("Fetch json data error: \(error)")
-        }
+        let favorites = DataStore.shared.fetchData()
+        let sortedFavorites = favorites.sorted {$0.rating > $1.rating}
+        self.favorites.accept([Section(model: "", items: sortedFavorites)])
     }
     func bindTableView(_ dataSource: RxTableViewSectionedAnimatedDataSource<Section>,_ tableView: UITableView) {
         favorites
@@ -62,16 +54,13 @@ class ListInteractor: ListInteractorDelegate {
     }
     func userDidSelectAnItemToRate(index: Int) -> CurrentRating {
         let selectedItem = section.items[index]
-        self.ratingID = selectedItem.identity
+        self.selectedID = selectedItem.identity
         return selectedItem.rating
     }
     func userDidFinishRating(newRating: Int) {
-        guard let index = section.items.firstIndex(where: {$0.identity == ratingID}) else {return}
-        var items = section.items
-        items[index].rating = newRating
-        items.sort{ $0.rating > $1.rating }
-        favorites.accept([Section(model: "", items: items)])
-        self.ratingID = nil
+        guard let index = section.items.firstIndex(where: {$0.identity == selectedID}) else {return}
+        updateRating(newRating, at: index)
+        self.selectedID = nil
     }
 }
 
@@ -81,13 +70,17 @@ private extension ListInteractor {
         return favorites.value[0]
     }
     @objc func randomRating() {
+        let randRating = Int.random(in: 1...5)
         let randIndex = Int.random(in: 0..<section.items.count)
-        var items = section.items
-        items[randIndex].rating = Int.random(in: 1...5)
-        items.sort{ $0.rating > $1.rating }
-        favorites.accept([Section(model: "", items: items)])
+        updateRating(randRating, at: randIndex)
         
         // Set timer to keep it going
         setTimer()
+    }
+    func updateRating(_ newRating: Int, at index: Int) {
+        var items = section.items
+        items[index].rating = newRating
+        items.sort{ $0.rating > $1.rating }
+        favorites.accept([Section(model: "", items: items)])
     }
 }

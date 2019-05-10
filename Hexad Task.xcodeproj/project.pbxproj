@@ -12,6 +12,7 @@
 		DD6DA12022820F99000C4D50 /* Favorite.json in Resources */ = {isa = PBXBuildFile; fileRef = DD6DA11F22820F99000C4D50 /* Favorite.json */; };
 		DD6DA12222821133000C4D50 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6DA12122821133000C4D50 /* Favorite.swift */; };
 		DDAAE76122840F6C00C2E1B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DDAAE76022840F6C00C2E1B2 /* Podfile */; };
+		DDAC13852285834D00B2BE85 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAC13842285834D00B2BE85 /* DataStore.swift */; };
 		DDB9B56622847635004517ED /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB9B56522847635004517ED /* FavoriteViewModel.swift */; };
 		DDC91A422282004100D0E8E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC91A412282004100D0E8E5 /* AppDelegate.swift */; };
 		DDC91A472282004100D0E8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC91A452282004100D0E8E5 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		DD6DA11F22820F99000C4D50 /* Favorite.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Favorite.json; sourceTree = "<group>"; };
 		DD6DA12122821133000C4D50 /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		DDAAE76022840F6C00C2E1B2 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DDAC13842285834D00B2BE85 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		DDB9B56522847635004517ED /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		DDC91A3E2282004100D0E8E5 /* Hexad Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hexad Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC91A412282004100D0E8E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,14 +106,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DDB9B5672284763E004517ED /* Data & Models */ = {
+		DDB9B5672284763E004517ED /* DataStore & Models */ = {
 			isa = PBXGroup;
 			children = (
 				DD6DA11F22820F99000C4D50 /* Favorite.json */,
 				DD6DA12122821133000C4D50 /* Favorite.swift */,
 				DDB9B56522847635004517ED /* FavoriteViewModel.swift */,
+				DDAC13842285834D00B2BE85 /* DataStore.swift */,
 			);
-			path = "Data & Models";
+			path = "DataStore & Models";
 			sourceTree = "<group>";
 		};
 		DDC91A352282004100D0E8E5 = {
@@ -144,7 +147,7 @@
 				DDC91A482282004400D0E8E5 /* Assets.xcassets */,
 				DDC91A4A2282004400D0E8E5 /* LaunchScreen.storyboard */,
 				DDC91A4D2282004400D0E8E5 /* Info.plist */,
-				DDB9B5672284763E004517ED /* Data & Models */,
+				DDB9B5672284763E004517ED /* DataStore & Models */,
 			);
 			path = "Hexad Task";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAC13852285834D00B2BE85 /* DataStore.swift in Sources */,
 				DDFC2407228564EE005F152A /* ListInteractor.swift in Sources */,
 				DDB9B56622847635004517ED /* FavoriteViewModel.swift in Sources */,
 				DDC91A722282028800D0E8E5 /* ListCell.swift in Sources */,
